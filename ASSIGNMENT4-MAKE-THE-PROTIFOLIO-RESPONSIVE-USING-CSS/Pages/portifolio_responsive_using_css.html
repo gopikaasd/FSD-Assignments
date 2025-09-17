@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTIFOLIO-RESPONSIVE-USING-CSS</title>
+
+    <link rel="stylesheet" href="../Styles/portifolio.css">
+    <link rel="stylesheet" href="../Styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header> <!-- Inline Css -->
+        <h1>My Portifolio</h1>
+    </header>
+
+    <nav id="links">
+
+        <a href="#"></a>
+        <label for="hamburger" hidden>
+            <i class="fa fa-bars"></i>
+        </label>
+        <input type="checkbox" id="hamburger" name="" hidden>
+        <div class="menu">
+            <ul class="list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
+
+
+        <!-- <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a> -->
+    </nav>
+
+    <center>
+        <!-- <img src="Images/gopika.png"
+            style="height: 250px;width: 250px; vertical-align:middle; border: 1px solid black; border-radius: 10px 0 10px 0;"> -->
+
+        <img src="../Images/gopika.png" id="image">
+
+
+        <!-- span tags with inline css  -->
+        <h3>
+            <span style="color: white; background-color:#003049;  font-weight: bold; text-decoration:solid; ">
+                GOPIKA ARUN
+            </span>
+
+        </h3>
+
+
+    </center>
+
+    <!-- About Section -->
+
+    <main id="aboutme">
+        <section id="about">
+            <article>
+                <header>
+                    <h2>About Me</h2>
+                </header>
+                <p>
+                    Hello,
+                    This is Gopika Arun, I hail from Thiruwilvamala, Kerala. I am married and have a two year old
+                    son. My husband is in Aviation. We are currently settled in palakkad.
+                    I completed my graduation in Bsc Computer Science in 2018. I did work for two companies on the
+                    backend, namely Manapuram Comptech and Consultants Ltd and Descpro Technologies Pvt Ltd.
+                    I had to take a break from my career for my delivery. I am looking forward to an opportunity to
+                    restart my career.
+                </p>
+
+                <!-- Summary -->
+
+                <header>
+                    <h2>Summary</h2>
+                </header>
+                <ol id="Summary" type="A">
+                    <li>
+                        Good Knowledge in developing windows applications, web applications in Microsoft Visual Studio
+                        .Net IDE using C#.Net 1.1, C#.Net 2.0, VB.NET, ASP.NET, ADO.NET and SQL Server.
+                    </li>
+                    <li>
+                        Extensive experience in SQL Server Database design, Database maintenance, developing SQL
+                        queries, stored procedures, and Views using SQL Server.
+                    </li>
+                    <li>
+                        Good Knowledge in developing dot net Web applications.
+                    </li>
+                    <li>
+                        Effective in working independently and collaboratively in teams.
+                    </li>
+                </ol>
+
+                <!-- Technical Skills -->
+
+                <header>
+                    <h2>Technical Skills</h2>
+                </header>
+                <ul id="technical-skills">
+                    <li>
+                        Microsoft Technologies: ASP.NET, VB.NET, C#.NET
+                    </li>
+                    <li>
+                        Programming Languages: C, C++, C#
+                    </li>
+                    <li>
+                        Web Development Tools: HTML, HTML 5, CSS
+                    </li>
+                    <li>
+                        Scripting Languages: Java Script , VB Script
+                    </li>
+                    <li>
+                        RDBMS: SQL Server 2012, MySQL,Oracle
+                    </li>
+                    <li>
+                        Operating Systems: Windows 95/98/2000/NT, XP,10
+                    </li>
+                    <li>
+                        Development Tools: VisualStudio.NET 2012, Visual Studio.NET 2017.
+                    </li>
+                    <li>
+                        Application Servers: IIS
+                    </li>
+                </ul>
+
+                <header>
+                    <h2>Qualifications</h2>
+                </header>
+
+                <!-- create a table for add qualification details using grid -->
+
+                <div class="table-container">
+                    <div class="table-header">
+                        <div class="header-cell">Course</div>
+                        <div class="header-cell">Board/University</div>
+                        <div class="header-cell">School/College/Institute</div>
+                        <div class="header-cell">Year</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">B Sc. Computer Science</div>
+                        <div class="table-cell">Calicut University</div>
+                        <div class="table-cell">VV COLLEGE,palakkad</div>
+                        <div class="table-cell">2018</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">MS Dot Net with SQL Server</div>
+                        <div class="table-cell">Safe Technologies</div>
+                        <div class="table-cell">Institute</div>
+                        <div class="table-cell">2018</div>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+
+        <!-- Project Section -->
+
+        <section id="projects">
+            <article>
+                <header>
+                    <h2>Projects</h2>
+                </header>
+
+                <ol>
+                    <li style="font-size:20px;" class="project-name">
+                        Project Name: E-RECRUIT |
+                        Client: Jobbiz Job Solution, Palakkad |
+                        Role: GUI Designing, Coding, Reports and Error Handling |
+                        Environment: VisualStudio2012,SqlServer2012
+
+                    </li>
+
+                    <h3>
+                        Description
+                    </h3>
+                    <p style="text-align:left;">
+                        The Project is a Webapplication, which is designed to control the activities of HR in
+                        recruitment
+                        firms. The project also deals with user positions for role based access. The software helps
+                        staffing agencies and recruiting departments to track their job openings, resumes, candidates,
+                        clients and contacts- quickly and efficiently.
+                        This allows recruiting professionals to spend less time on the process and paper work and more
+                        time doing what they do best getting the right candidate. The product was highly customized as
+                        per the client
+                        requirement.
+
+                    </p>
+
+
+                    <li style="font-size:20px;" class="project-name">
+                        Project Name: FIXED ASSET |
+                        Client: ManappuramFoundation |
+                        Role: GUI Designing, Coding, Reports and Error Handling|
+                        Environment: VS2010, PLSQL (Oracle)
+                    </li>
+
+                    <h3>
+                        Description
+                    </h3>
+
+                    <p style="text-align:left;">
+                        Fixed asset management is the process of tracking and maintaining an organization’s
+                        physical assets and equipment. Asset types include vehicles, computers, furniture and
+                        machinery.
+                    </p>
+                </ol>
+                <ul>
+                    <li>
+                        Track and monitor fixed assets
+                    </li>
+                    <li>
+                        Oversee equipment and machinery in multiple locations
+                    </li>
+                    <li>
+                        Lower maintenance costs
+                    </li>
+                    <li>
+                        Improve operational efficiency
+                    </li>
+                    <li>
+                        Maintain a record of retired, sold, stolen or lost assets
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+      <!-- Contact Form ---Using inline css-->
+
+        <section id="contact">
+            <article>
+                <header>
+                    <h2>Contact</h2>
+                </header>
+                <form action="">
+                    <fieldset>
+
+
+                        <legend
+                            style="font-weight: bolder;font-size: larger; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+                            Contact Form</legend>
+                        <label for="name" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Name :</label>
+                        <br>
+                        <input type="text" id="name" name="name" required placeholder="Enter Your Name" minlength="3"
+                            style="height: 25px; width: 300px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        <br>
+                        <br>
+                        <label for="birthdate" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Birth Date
+                            :</label>
+                        <br>
+                        <input type="date" id="birthdate" required style="height: 25px; width: 300px;">
+                        <br>
+                        <br>
+
+                        <label for="email" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Email :</label>
+                        <br>
+                        <input type="email" id="email" name="email" required placeholder="Enter Your Email"
+                            style="height: 25px; width: 300px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        <br>
+                        <br>
+
+                        <label for="phone" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Phone Number
+                            :</label>
+                        <br>
+                        <input type="phone" id="phone" name="phone" required placeholder="Eg: 8523697410"
+                            pattern="[789][0-9]{9}" style="height: 25px; width: 300px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;" minlength="10" maxlength="12">
+                        <br>
+                        <br>
+
+                        <label for="password" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Password
+                            :</label>
+                        <br>
+                        <input type="password" name="password" id="password" placeholder="Enter a secure password"
+                            required minlength="8" style="height: 25px; width: 300px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                        <br>
+                        <br>
+
+                        <label for="message" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Message
+                            :</label>
+                        <br>
+                        <textarea name="message" id="message" rows="2" placeholder="Enter Your Message"
+                            style="height: 25px; width: 300px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></textarea>
+                        <br>
+                        <br>
+
+                        <label style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Gender :</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Male </label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Female
+                        </label>
+
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Other </label>
+
+                        <br>
+                        <br>
+
+
+
+                        <!--This code is used for dropdownlist-->
+
+                        <label for="language" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Choose a
+                            Language:</label>
+                        <select id="language" name="language">
+                            <option value="malayalam">Malayalam</option>
+                            <option value="english">English</option>
+                            <option value="hindi">Hindi</option>
+                            <option value="tamil">Tamil</option>
+                        </select>
+
+                        <br>
+                        <br>
+
+                        <label style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Hobbies :</label>
+                        <input type="checkbox" id="reading" name="hobbies" value="reading">
+                        <label for="reading" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Reading
+                        </label>
+
+                        <input type="checkbox" id="sports" name="hobbies" value="sports">
+                        <label for="sports" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Sports
+                        </label>
+
+                        <input type="checkbox" id="music" name="hobbies" value="music">
+                        <label for="music" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Music </label>
+                        <br>
+                        <br>
+
+                        <label for="newsletter" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Subscribe
+                            To Newsletter :</label>
+                        <input type="checkbox" id="newsletter">
+                        <br>
+                        <br>
+                        <input type="submit" value="Submit"
+                            style="height: 30px; width: 200px;background-color: #4a4e69;font-family: 'Times New Roman', Times, serif;font-weight:bolder;font-size:x-large; font-style: italic;border-radius: 20cm; color: white;">
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+
+
+        <!-- Go to Top -->
+        <section>
+            <nav style="text-align: right;">
+                <a href="#top"
+                    style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: blue;text-decoration: underline;">Go
+                    to Top</a>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2025 My Portifolio</p>
+    </footer>
+</body>
+
+</html>
