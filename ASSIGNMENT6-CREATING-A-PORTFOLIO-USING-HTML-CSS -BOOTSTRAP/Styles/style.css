@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  color: white;
+  background: #2b2d42;
+}
+
+.navbar {
+  background: none;
+}
+
+.text-color {
+  color: #df9a57;
+  font-weight: bold;
+}
+
+.bg-btn {
+  background-color: #df9a57;
+}
+
+.card-text {
+  color: #808080;
+}
+
+.bic {
+  font-size: 1.5em;
+  color: #df9a57;
+}
+
+.btn {
+  color: white;
+  border: 1px solid #df9a57;
+}
+
+.bg-btn2 {
+  background: none;
+  border: 1px solid #df9a57;
+}
+
+.pgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+}
+
+.hrline {
+  border-bottom: 5px solid #808080;
+}
+
+li {
+  list-style: none;
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+/* Profile Image */
+
+.circle-container {
+  position: relative;
+  display: inline-block;
+  padding: 40px;
+  /* space for the outside ring */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* cilrcle image */
+.circle-container img {
+  width: 250px;
+  height: 250px;
+  display: fl;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+/* circular ring outside */
+.circle-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  /* must be bigger than image */
+  height: 340px;
+  border: 8px solid #df9a57;
+  /* ring color */
+  border-radius: 50%;
+  box-shadow: 0 0 20px #df9a57;
+  z-index: 2;
+}
+
+
+/* Timeline */
+
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+  list-style: none;
+
+}
+
+/* Vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  margin-left: -2px;
+  background-color: #dee2e6;
+}
+
+/* Timeline item */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 1rem 2rem;
+}
+
+/* Circle markers */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0d6efd;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 2px #0d6efd;
+  z-index: 1;
+}
+
+/* Left side */
+.timeline-item-left {
+  left: 0;
+  text-align: right;
+}
+
+.timeline-item-left::before {
+  right: -10px;
+}
+
+/* Right side */
+.timeline-item-right {
+  left: 50%;
+}
+
+.timeline-item-right::before {
+  left: -10px;
+}
